@@ -11,6 +11,7 @@ header {
     height: 80px;
     justify-content: space-around;
     /*z-index: 1;*/
+    padding: 0 100px;
 }
 h1 {
     height: 76px;
@@ -43,28 +44,76 @@ body {
 }
 .main_img {
     width: 100%;
+
 }
 .structure {
-    /*display: flex;*/
-    /*flex-direction: row;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 100px;
 }
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.8em;
+    text-transform: uppercase;
 
+}
+h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #bf1e2e;
+}
+h3 {
+    font-size: 0.9em;
+}
+p {
+    font-size: 0.9em;
+    text-transform: none;
 }
 .main_img {
     width: 100%;
+
 }
 .left-sidebar {
-    float: left;
+    margin-top: 25px;
+    /*float: left;*/
+
     /*display: flex;*/
     /*flex-direction: column;*/
     /*justify-content: flex-start;*/
     /*align-items: flex-start;*/
+}
+.fa-camera-retro {
+    margin-right: 7px ;
+}
+.fa-video {
+    margin-right: 6px;
+}
+.fa-lightbulb {
+    margin-right: 13px;
+}
+.fa-handshake {
+    margin-right: 5px;
+}
+.fa-comments {
+    margin-right: 7px;
+}
+.left-sidebar-list {
+    list-style-type: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    /*overflow-y: scroll;*/
+    /*margin-right: 50px;*/
+}
+.left-sidebar-list li{
+    /*color: #35393b;*/
+    /*padding-right: 3px;*/
+}
+.right-sidebar img{
+    /*float: right;*/
 }
 .footer-list {
     display: flex;
@@ -75,21 +124,24 @@ body {
     /*vertical-align: baseline;*/
     list-style-type: none;
     text-transform: uppercase;
+    padding-left: 0;
     /*justify-content: space-evenly;*/
     /*width: 685px;*/
-    margin: 3em 10em 3em 10em;
+    /*margin: 3em 10em 3em 10em;*/
 }
-
-.footer-list li{
+.footer-list li {
     color: #898989;
     text-decoration-line: none;
-    padding: 3em;
+    padding: 1.5em;
+}
+.footer-list li:first-child {
+    padding-left: 0;
 }
 .social {
-    /*display:flex;*/
-    /*position: relative;*/
+    display:flex;
+    position: relative;
     float: right;
-    vertical-align: baseline;
+    /*vertical-align: baseline;*/
 
     /*text-align:center;*/
     /*width:2em;*/
@@ -114,10 +166,9 @@ body {
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: solid;
     border-top-color: rgb(191, 30, 46);
-
-
+    padding: 0 100px;
 }
